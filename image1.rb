@@ -21,6 +21,13 @@ class Image
 			puts
 		end
 	end
+
+	def output_image3
+		@image.each do |row|
+			print row.join("")
+			puts
+		end
+	end
 end
 
 
@@ -32,3 +39,4 @@ image = Image.new([
 ])
 image.output_image
 image.output_image2
+image.output_image3
